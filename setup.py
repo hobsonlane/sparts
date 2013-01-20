@@ -19,7 +19,7 @@ pandoc_path = require_binary('pandoc')
 import pandoc.core
 pandoc.core.PANDOC_PATH = pandoc_path
 
-THRIFT = require_binary('thrift')
+# THRIFT = require_binary('thrift')
 
 ROOT = os.path.abspath(os.path.dirname(__file__))
 
