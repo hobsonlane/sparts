@@ -1,0 +1,24 @@
+Installing Sparts
++++++++++++++++++++++++++++++
+
+See https://github.com/fmoo/sparts
+for more information.
+
+.. Contents::
+
+INTRODUCTION
+============
+
+This python module is in alpha testing and depends on several binary packages,
+so if you have an unfriendly, unopen operating system, these instructions may
+not do you much good.
+
+PREREQUISITES
+=============
+
+On Ubuntu >= 9.04
+~~~~~~~~~~~~~~
+
+You can get all the dependencies as follows::
+
+        sudo apt-get install python python-dev pandoc

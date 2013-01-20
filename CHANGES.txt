@@ -3,7 +3,7 @@ CHANGES
 
 0.2.3
 -----
-* Add MANIFESTS.in file to make pypi (`pip install`) compatible
+* Add "MANIFESTS.in" file to make pypi (`pip install`) compatible
 
 
 0.2.2

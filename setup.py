@@ -43,10 +43,10 @@ class gen_thrift(Command):
         pass
     def run(self):
         self.mkpath(os.path.join(ROOT, 'sparts', 'gen'))
-        for f in glob(os.path.join(ROOT, 'thrift', '*.thrift')):
-            self.spawn([THRIFT, '-out', os.path.join(ROOT, 'sparts', 'gen'),
-                        '-v', '--gen', 'py:new_style',
-                        os.path.join(ROOT, 'thrift', f)])
+#        for f in glob(os.path.join(ROOT, 'thrift', '*.thrift')):
+#            self.spawn([THRIFT, '-out', os.path.join(ROOT, 'sparts', 'gen'),
+#                        '-v', '--gen', 'py:new_style',
+#                        os.path.join(ROOT, 'thrift', f)])
 
 class build_py(_build_py):
     def run(self):
@@ -60,7 +60,7 @@ setup(
     description="Build services in python with as little code as possible",
     long_description=read_md_as_rest("README.md"),
 
-    install_requires=[],
+    install_requires=['thrift'],
     setup_requires=['pyandoc', 'unittest2'],
     author='Peter Ruibal',
     author_email='ruibalp@gmail.com',
