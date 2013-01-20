@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+0.2.3
+-----
+* Add MANIFESTS.in file to make pypi (`pip install`) compatible
+
+
 0.2.2
 -----
 * Add new DBusServiceTask::addHandlers() to make it easier to add handlers 
