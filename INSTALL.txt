@@ -21,4 +21,8 @@ On Ubuntu >= 9.04
 
 You can get all the dependencies as follows::
 
-        sudo apt-get install python python-dev pandoc
+        sudo apt-get install python python-dev pandoc libboost-dev libboost-test-dev libboost-program-options-dev libevent-dev automake libtool flex bison pkg-config g++ libssl-dev
+
+Until we get smarts about pip install compatability you need to do::
+
+        pip install 

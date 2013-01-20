@@ -19,7 +19,7 @@ pandoc_path = require_binary('pandoc')
 import pandoc.core
 pandoc.core.PANDOC_PATH = pandoc_path
 
-# THRIFT = require_binary('thrift')
+THRIFT = require_binary('thrift')
 
 ROOT = os.path.abspath(os.path.dirname(__file__))
 
@@ -43,10 +43,10 @@ class gen_thrift(Command):
         pass
     def run(self):
         self.mkpath(os.path.join(ROOT, 'sparts', 'gen'))
-#        for f in glob(os.path.join(ROOT, 'thrift', '*.thrift')):
-#            self.spawn([THRIFT, '-out', os.path.join(ROOT, 'sparts', 'gen'),
-#                        '-v', '--gen', 'py:new_style',
-#                        os.path.join(ROOT, 'thrift', f)])
+        for f in glob(os.path.join(ROOT, 'thrift', '*.thrift')):
+            self.spawn([THRIFT, '-out', os.path.join(ROOT, 'sparts', 'gen'),
+                        '-v', '--gen', 'py:new_style',
+                        os.path.join(ROOT, 'thrift', f)])
 
 class build_py(_build_py):
     def run(self):
