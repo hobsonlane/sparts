@@ -16,6 +16,8 @@ not do you much good.
 PREREQUISITES
 =============
 
+Sparts requires some binary packages, like Apache Thrift, and, of course, python.
+
 On Ubuntu >= 9.04
 ~~~~~~~~~~~~~~
 
